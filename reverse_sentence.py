@@ -22,7 +22,7 @@ for ch in orig:
         if need_append:
             aux.append('')
             need_append = False
-        # 此处不用idx控制，而是直接用-1对最后一个elem操作
+        # 此处不用idx控制，而是直接用-1对last elem操作
         aux[-1] += ch
 # reverse acts itself and returns None
 aux.reverse()
