@@ -1,0 +1,2 @@
+# EXERCISES
+easy algorithm exercises
