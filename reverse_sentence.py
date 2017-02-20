@@ -45,7 +45,7 @@ def main():
         except Exception as e:
             raise Usage(e)
     except Usage as usg:
-        print(usg.info)
+        usg.show_info()
         return -1
 
 
