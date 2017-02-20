@@ -13,5 +13,6 @@ class Usage(Exception):
         self.ex = ex
         self.info = '***Exception*** \n' + str(ex)
 
+    @staticmethod
     def show_info(self):
         traceback.print_exc()
