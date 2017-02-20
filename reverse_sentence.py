@@ -9,14 +9,7 @@
 不是简单的分词，空格需要保留。
 """
 
-import sys
-import os
-
-
-class Usage(Exception):
-    def __init__(self, expt):
-        self.exception = expt
-        self.info = '***Exception*** \n' + str(expt)
+from common import *
 
 
 def reverse_sentence(orig):
@@ -39,7 +32,7 @@ def reverse_sentence(orig):
     return ret
 
 
-def test():
+def demo():
     orig = ' this is   a book  !  '
     print(orig)
     print(reverse_sentence(orig))
@@ -48,7 +41,7 @@ def test():
 def main():
     try:
         try:
-            test()
+            demo()
         except Exception as e:
             raise Usage(e)
     except Usage as usg:
