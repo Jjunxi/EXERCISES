@@ -14,7 +14,7 @@ import numpy as np
 def generate_matrix(row_num, col_num, is_random=False):
     rst = []
     if is_random:
-        rst = [[random.randint(1, row_num * col_num + 1) for i in range(col_num)] for i in range(row_num)]
+        rst = [[random.randint(1, row_num * col_num + 1) for _ in range(col_num)] for _ in range(row_num)]
     else:
         rst = np.arange(1, row_num * col_num + 1).reshape(row_num, col_num)
     print(rst)
@@ -56,6 +56,7 @@ def demo():
 
     org = generate_matrix(3, 5)
     transpose(org)
+    spiral_order(org)
 
 
 def main():
