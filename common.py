@@ -8,5 +8,8 @@ define common funcitons
 
 import sys
 import os
+from random import randint
+
 from CC.usage import Usage
+
 
