@@ -21,6 +21,7 @@ Role = namedtuple('Role', ['NAME', 'AGE', 'GENDER', 'EMAIL'])
 
 def demo():
     ralf = Role(NAME='Ralf', AGE=29, GENDER='male', EMAIL='ralf@gmail.com')
+    # ralf = Role('Ralf', 29, 'male', 'ralf@gmail.com')
     print(ralf[NAME])
 
 
